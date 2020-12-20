@@ -1,0 +1,4 @@
+The output includes credentials that you must protect. Be sure that you do not include these credentials in your code or check the credentials into your source control. For more information, see https://aka.ms/azadsp-cli
+AppId                                 DisplayName                    Name                                  Password                            Tenant
+------------------------------------  -----------------------------  ------------------------------------  ----------------------------------  ------------------------------------
+ebbd2634-15f2-4a4f-aa88-7fd43f31f79c  azure-cli-2020-12-20-14-33-48  http://azure-cli-2020-12-20-14-33-48  rQ2JRxfQsYl.HXN~by44PdiU0OtF48Vz0d  216a4c5c-1fd6-49d7-bcd2-276158ba6499
