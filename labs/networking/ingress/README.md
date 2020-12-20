@@ -71,6 +71,12 @@ An ingress controller is a piece of software that provides reverse proxy, config
     * Note the new DNS name for your public IP. It should be something like `brian13270.eastus.cloudapp.azure.com`. You can look it up in the portal in the "MC" resource group for your cluster. 
 
 
+    * Find out the FQDN
+        ```
+        az network public-ip show --ids $PUBLICIPID --query "[dnsSettings.fqdn]" --output tsv
+        ```
+
+
 4. Generate TLS certificates
 
     In your organization, you will already have a process for this. In our lab, we are going to use self-signed TLS certs.
