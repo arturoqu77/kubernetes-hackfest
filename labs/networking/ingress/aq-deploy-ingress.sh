@@ -18,7 +18,7 @@ kubectl --namespace ingress-basic get services -o wide -w nginx-ingress-ingress-
 IP="MY_EXTERNAL_IP"
 
 # Name to associate with public IP address
-DNSNAME="demo-aks-ingress"
+DNSNAME="arturoaks525"
 
 # Get the resource-id of the public ip
 PUBLICIPID=$(az network public-ip list --query "[?ipAddress!=null]|[?contains(ipAddress, '$IP')].[id]" --output tsv)
