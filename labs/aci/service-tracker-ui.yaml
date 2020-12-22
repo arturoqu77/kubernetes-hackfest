@@ -24,7 +24,7 @@ spec:
             - name: QUAKES_API_ROOT
               value: http://quakes-api.hackfest.svc.cluster.local:3012/
             - name: APPINSIGHTS_INSTRUMENTATIONKEY
-              value: <INSERT INSTRUMENTATION KEY>
+              value: 538ca440-0fb6-418c-968b-555245770918
           ports:
           - containerPort: 3009
             protocol: TCP
