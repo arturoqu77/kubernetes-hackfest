@@ -1,11 +1,18 @@
-apiVersion: certmanager.k8s.io/v1alpha1
+apiVersion: cert-manager.io/v1alpha2
 kind: ClusterIssuer
 metadata:
-  name: letsencrypt-aks
+  name: letsencrypt
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory
-    email: user@contoso.com
+    email: arturoqu@microsoft.com
     privateKeySecretRef:
-      name: letsencrypt-aks
-    http01: {}
+      name: letsencrypt
+    solvers:
+    - http01:
+        ingress:
+          class: nginx
+          podTemplate:
+            spec:
+              nodeSelector:
+                "kubernetes.io/os": linux

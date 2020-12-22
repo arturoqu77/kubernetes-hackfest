@@ -1,17 +1,12 @@
-apiVersion: certmanager.k8s.io/v1alpha1
+apiVersion: cert-manager.io/v1alpha2
 kind: Certificate
 metadata:
   name: tls-secret
 spec:
   secretName: tls-secret
   dnsNames:
-  - <DNSNAMEHERE>.eastus.cloudapp.azure.com
-  acme:
-    config:
-    - http01:
-        ingressClass: nginx
-      domains:
-      - <DNSNAMEHERE>.eastus.cloudapp.azure.com
+  - arturoqu525.canadacentral.cloudapp.azure.com
   issuerRef:
-    name: letsencrypt-aks
+    name: letsencrypt
     kind: ClusterIssuer
+    group: cert-manager.io

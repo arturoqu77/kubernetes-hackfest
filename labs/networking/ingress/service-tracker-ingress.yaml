@@ -9,7 +9,7 @@ spec:
   tls:
   - hosts:
     - arturoqu525.canadacentral.cloudapp.azure.com
-    secretName: aks-ingress-tls
+    secretName: tls-secret
   rules:
   - host: arturoqu525.canadacentral.cloudapp.azure.com
     http:
