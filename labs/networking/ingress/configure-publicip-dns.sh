@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Public IP address
-IP="52.228.119.188"
+IP="52.228.121.73"
 
 # Name to associate with public IP address
 DNSNAME=$UNIQUE_SUFFIX
